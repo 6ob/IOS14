@@ -1,0 +1,5 @@
+[Script]
+IPA应用安装 = type=http-request,pattern=^https:\/\/6ob/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6ob/IOS14/main/IPA_install.js
+
+[MITM]
+hostname = %APPEND% 6ob
